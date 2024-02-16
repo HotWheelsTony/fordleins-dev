@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Archivo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Archivo";
+    font-style: bold;
+    font-weight: 900;
+    src: url("../fonts/Archivo-Bold.ttf");
+}
+
+body {
+    font-family: "Archivo";
+}
