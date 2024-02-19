@@ -12,19 +12,17 @@
     });
 
     const openSection = (sectionId) => {
-        const target = document.getElementById(sectionId);
-        const allSections = document.querySelectorAll(".section");
-
-        allSections.forEach((section) => {
+        document.querySelectorAll(".section").forEach((section) => {
             if (section.id !== sectionId) {
                 section.classList.add("flex-[0]", "pointer-events-none");
             }
         });
-
-        target.classList.add("open");
+        document.getElementById("main").classList.add("mb-0");
+        document.getElementById(sectionId).classList.add("open");
     };
 
     const closeSection = () => {
+        document.getElementById("main").classList.remove("mb-0");
         document.querySelectorAll(".section").forEach((section) => {
             section.classList.remove("flex-[0]", "pointer-events-none", "open");
         });
@@ -44,21 +42,25 @@
 
 <div id="background" class="fixed inset-0 -z-10" />
 
-<div class="mx-auto h-screen max-w-screen-xl px-6 py-12 lg:py-0 lg:px-24">
+<div class="mx-auto h-screen max-w-screen-xl px-6 lg:py-0 lg:px-20">
     <div class="lg:flex lg:justify-between lg:gap-4 h-full">
-        <!--  -->
-
-        <main class="flex flex-col h-full bg-white group/sections">
+        <div class="lg:sticky lg:top-0 lg:py-20">
+            <Header />
+        </div>
+        <main
+            id="main"
+            class="flex flex-col max-h-full w-3/5 my-20 group/sections"
+        >
             {#each sections as section}
                 <section
                     id={section}
-                    class="section flex flex-1 hover:!flex-[3] group-hover/sections:bg-black hover:!bg-orange-400 overflow-clip transition-all duration-1000 ease-in-out bg-green-400 border border-b-red-500"
+                    class="section flex flex-1 hover:!flex-[3] overflow-clip"
                 >
                     <button
                         on:click={() => {
                             openSection(section);
                         }}
-                        class="title w-full h-full flex flex-1 justify-center items-center overflow-clip transition-all duration-1000 ease-in-out"
+                        class="title flex-1 bg-slate-600/20 group-hover/sections:bg-slate-600/20 hover:!bg-slate-500/30 overflow-clip"
                     >
                         <h1 class="text-white text-3xl">
                             {section}
@@ -66,15 +68,22 @@
                     </button>
 
                     <div
-                        class="content flex flex-col flex-[0] overflow-clip transition-all duration-1000 ease-in-out"
+                        class="content flex flex-col flex-[0] overflow-x-clip overflow-y-scroll"
                     >
                         <button
                             on:click={() => {
                                 closeSection();
                             }}
-                            class="bg-black text-white">Close</button
+                            class="z-10 py-2 px-4 tracking-tight flex justify-between sticky top-0 backdrop-blur-sm"
                         >
-                        Some description and elements lorem ipsum fuck ufck fuck
+                            <h1 class="text-xl font-semibold">{section}</h1>
+                            <h1 class="text-xl font-semibold">Close</h1>
+                        </button>
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
                     </div>
                 </section>
             {/each}
@@ -112,5 +121,12 @@
         & .content {
             @apply flex-1;
         }
+    }
+
+    main,
+    .section,
+    .title,
+    .content {
+        @apply transition-all duration-1000 ease-in-out;
     }
 </style>
