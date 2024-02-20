@@ -4,11 +4,11 @@
 
 <header>
     <div class="mb-5 lg:mb-10">
-        <h1 class="font-bold text-white text-5xl tracking-tight mb-3">
-            Ford Leins
-        </h1>
-        <span class="font-medium text-white text-xl tracking-tight">
-            Software Developer at SpatialNetworx
+        <h1 class="text-5xl mb-3">Ford Leins</h1>
+        <span class="text-xl">
+            Software Developer at <a href="https://spatialnetworx.ai/"
+                >SpatialNetworx</a
+            >
         </span>
     </div>
     <div class="flex gap-2">

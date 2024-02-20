@@ -13,7 +13,9 @@
 </script>
 
 <div
-    class="lg:hover:!opacity-100 lg:group-hover/cards:opacity-50 py-4 lg:px-4 transition sm:flex gap-4 rounded-md lg:hover:drop-shadow-md lg:hover:bg-slate-700/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
+    class="lg:hover:!opacity-100 lg:group-hover/cards:opacity-50 mb-4 py-4 lg:px-4 transition sm:flex gap-4 rounded-md lg:hover:drop-shadow-md
+     lg:hover:bg-mediumGrey/40
+      lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
 >
     <div class="mr-4">
         <span class="text-nowrap">
@@ -21,18 +23,18 @@
         </span>
     </div>
     <div>
-        <h6 class="text-white tracking-wider">
+        <h2>
             {title} &bull; {company}
-        </h6>
+        </h2>
         <p>
             {content}
         </p>
         <div class="flex my-1">
             {#each skills as skill}
                 <div
-                    class="text-sm rounded-full bg-teal-400/10 w-fit mr-2 px-3 py-1.5"
+                    class="text-sm rounded-full bg-green/10 w-fit mr-2 px-3 py-1.5"
                 >
-                    <span class="text-teal-300">
+                    <span class="text-green">
                         {skill}
                     </span>
                 </div>
