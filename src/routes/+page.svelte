@@ -43,7 +43,7 @@
                     content: Projects,
                 },
                 {
-                    name: "Skills",
+                    name: "Education & Skills",
                     content: Skills,
                 },
             ]}
