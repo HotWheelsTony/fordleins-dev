@@ -37,10 +37,8 @@
     ];
 </script>
 
-<div>
-    <div class="group/cards">
-        {#each roles as role}
-            <Card content={role} />
-        {/each}
-    </div>
+<div class="group/cards">
+    {#each roles as role}
+        <Card content={role} />
+    {/each}
 </div>
