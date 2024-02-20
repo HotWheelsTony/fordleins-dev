@@ -2,33 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-.heading-color {
-    @apply text-slate-200;
-}
-
-.content-color {
-    @apply text-slate-500;
-}
-
-.content-color-dark {
-    @apply text-slate-600;
-}
-
-.accent-primary {
-    @apply text-teal-300;
-}
-
-.accent-secondary {
-    @apply bg-teal-400;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: "Archivo";
-    @apply bg-slate-800 antialiased leading-relaxed text-slate-400;
+    @apply bg-darkGrey antialiased leading-relaxed text-slate-400 selection:bg-green;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-veryLightGrey tracking-tight;
+}
+
+h1 {
+    @apply font-bold;
+}
+
+h2 {
+    @apply font-semibold;
+}
+
+h3 {
+    @apply font-medium;
+}
+
+svg,
+p {
+    @apply text-lightGrey;
+}
+
+span {
+    @apply text-lightGrey font-medium tracking-tight;
+}
+
+svg {
+    @apply hover:text-yellow transition transform hover:-translate-y-0.5;
+}
+
+a {
+    @apply underline hover:text-green transition;
 }
 
 
