@@ -32,9 +32,8 @@ h3 {
     @apply font-medium;
 }
 
-svg,
 p {
-    @apply text-lightGrey;
+    @apply text-lightGrey leading-normal;
 }
 
 span {
@@ -42,7 +41,7 @@ span {
 }
 
 svg {
-    @apply hover:text-yellow transition transform hover:-translate-y-0.5;
+    @apply text-lightGrey hover:text-yellow transition transform hover:-translate-y-0.5;
 }
 
 a {
