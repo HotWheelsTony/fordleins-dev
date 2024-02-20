@@ -12,7 +12,14 @@
         </span>
     </div>
     <div class="flex gap-2">
-        <Icon name="linkedin" />
-        <Icon name="github" />
+        <a href="https://www.linkedin.com/in/ford-leins/">
+            <Icon name="linkedin" />
+        </a>
+        <a href="https://github.com/HotWheelsTony">
+            <Icon name="github" />
+        </a>
+        <a href="mailto:fordleins@gmail.com">
+            <Icon name="email" />
+        </a>
     </div>
 </header>
