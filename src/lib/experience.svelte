@@ -34,13 +34,6 @@
     The courses I tutored were focused on implementing algorithms & design patterns, and teaching best
     practices when writing software.`,
         },
-        // {
-        //     title: "",
-        //     org: "",
-        //     date: "",
-        //     skills: "",
-        //     description: "",
-        // },
     ];
 </script>
 
