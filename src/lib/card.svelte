@@ -19,14 +19,17 @@
      lg:hover:bg-mediumGrey/40
       lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
 >
-    <div class="">
-        <span class="text-nowrap">
+    <div class="flex-shrink-0 w-1/4">
+        <span>
             {content.date}
         </span>
     </div>
     <div>
         <h2 class="text-lg">
-            {content.title} &bull; {content.org}
+            <span class="text-green">
+                {content.title}
+            </span>
+            &bull; {content.org}
         </h2>
         <p>
             {content.description}
