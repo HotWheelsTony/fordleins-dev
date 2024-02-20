@@ -14,40 +14,58 @@
     const closeSection = () => {
         document.getElementById("main").classList.add("my-20");
         document.querySelectorAll(".section").forEach((section) => {
-            section.classList.remove("flex-[0]", "pointer-events-none", "open");
+            section.classList.remove("flex-[0]", "open");
+
+            //Just stop hover interaction while blade is closing to keep things smooth
+            setTimeout(() => {
+                section.classList.remove("pointer-events-none");
+            }, 1000);
         });
     };
 
-    export let sections = ["About", "Experience", "Projects"];
+    export let sections = [
+        {
+            name: "Section A",
+            content: Card,
+        },
+        {
+            name: "Section B",
+            content: Card,
+        },
+        {
+            name: "Section C",
+            content: Card,
+        },
+    ];
 </script>
 
 <main
     id="main"
     class="hidden lg:flex flex-col max-h-full lg:w-3/5 my-20 group/sections"
 >
-    {#each sections as sectionName}
+    {#each sections as section}
         <section
-            id={sectionName}
+            id={section.name}
             class="section flex flex-1 hover:!flex-[3] overflow-clip"
         >
             <button
                 on:click={() => {
-                    openSection(sectionName);
+                    openSection(section.name);
                 }}
                 class="title flex-1 bg-mediumGrey group-hover/sections:opacity-30 hover:!bg-lightMediumGrey/70 hover:!opacity-100 overflow-clip"
             >
                 <h3 class="text-4xl">
-                    {sectionName}
+                    {section.name}
                 </h3>
             </button>
 
             <div
-                class="content flex flex-col flex-[0] overflow-x-clip overflow-y-scroll"
+                class="content flex flex-col flex-[0] overflow-x-clip overflow-y-auto"
             >
                 <header
                     class="z-10 p-4 flex justify-between sticky top-0 backdrop-blur-sm"
                 >
-                    <h2 class="text-2xl">{sectionName}</h2>
+                    <h2 class="text-2xl">{section.name}</h2>
                     <button
                         on:click={() => {
                             closeSection();
@@ -58,7 +76,7 @@
                         </span>
                     </button>
                 </header>
-                <!-- content goes here -->
+                <svelte:component this={section.content} />
             </div>
         </section>
     {/each}
