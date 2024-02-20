@@ -11,37 +11,41 @@
             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
             id est laborum.`,
+        url: "/",
     };
+    let pointerStyle = content.url === "/" ? "cursor-default" : "";
 </script>
 
-<div
-    class="lg:hover:!opacity-100 lg:group-hover/cards:opacity-50 mb-4 py-4 lg:px-4 transition sm:flex gap-6 rounded-md lg:hover:drop-shadow-md
+<a href={content.url} target="”_blank”" class="no-underline {pointerStyle}">
+    <div
+        class="lg:hover:!opacity-100 lg:group-hover/cards:opacity-50 mb-4 py-4 lg:px-4 transition sm:flex gap-6 rounded-md lg:hover:drop-shadow-md
      lg:hover:bg-mediumGrey/40
       lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
->
-    <div class="flex-shrink-0 w-1/4">
-        <span>
-            {content.date}
-        </span>
-    </div>
-    <div>
-        <h2 class="text-lg">
-            <span class="text-green">
-                {content.title}
+    >
+        <div class="flex-shrink-0 w-1/4">
+            <span>
+                {content.date}
             </span>
-            &bull; {content.org}
-        </h2>
-        <p>
-            {content.description}
-        </p>
-        <div class="flex flex-wrap">
-            {#each content.skills as skill}
-                <div
-                    class="mr-2 mt-2 px-2 text-sm text-green bg-green/10 rounded-full"
-                >
-                    {skill}
-                </div>
-            {/each}
+        </div>
+        <div>
+            <h2 class="text-lg">
+                <span class="text-green">
+                    {content.title}
+                </span>
+                &bull; {content.org}
+            </h2>
+            <p>
+                {content.description}
+            </p>
+            <div class="flex flex-wrap">
+                {#each content.skills as skill}
+                    <div
+                        class="mr-2 mt-2 px-2 text-sm text-green bg-green/10 rounded-full"
+                    >
+                        {skill}
+                    </div>
+                {/each}
+            </div>
         </div>
     </div>
-</div>
+</a>
