@@ -1,9 +1,11 @@
 <script>
     import { onMount } from "svelte";
-    import Card from "$lib/card.svelte";
     import Header from "$lib/header.svelte";
     import Footer from "$lib/footer.svelte";
     import FlexStack from "$lib/flexStack.svelte";
+    import Experience from "$lib/experience.svelte";
+    import Projects from "$lib/projects.svelte";
+    import Skills from "$lib/skills.svelte";
 
     onMount(() => {
         window.addEventListener("mousemove", updateMousePos);
@@ -30,7 +32,22 @@
             <Header />
             <Footer />
         </div>
-        <FlexStack />
+        <FlexStack
+            sections={[
+                {
+                    name: "Experience",
+                    content: Experience,
+                },
+                {
+                    name: "Projects",
+                    content: Projects,
+                },
+                {
+                    name: "Skills",
+                    content: Skills,
+                },
+            ]}
+        />
     </div>
 </div>
 
