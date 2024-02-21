@@ -31,10 +31,7 @@
     ];
 </script>
 
-<main
-    id="main"
-    class="hidden lg:flex flex-col max-h-full lg:w-3/5 my-20 group/sections"
->
+<main id="main" class="hidden lg:flex flex-col max-h-full my-20 group/sections">
     {#each sections as section}
         <section
             id={section.name}
