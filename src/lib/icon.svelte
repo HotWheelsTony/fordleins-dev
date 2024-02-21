@@ -82,6 +82,25 @@
         fill="currentColor"
     ></path>`,
         },
+        link: {
+            box: 64,
+            path: `<path
+        stroke-width="6"
+        stroke="currentColor"
+        d="M55.4,32V53.58a1.81,1.81,0,0,1-1.82,1.82H10.42A1.81,1.81,0,0,1,8.6,53.58V10.42A1.81,1.81,0,0,1,10.42,8.6H32"
+    ></path><polyline
+        stroke-width="6"
+        stroke="currentColor"
+        points="40.32 8.6 55.4 8.6 55.4 24.18"
+    ></polyline><line
+        stroke-width="6"
+        stroke="currentColor"
+        x1="19.32"
+        y1="45.72"
+        x2="54.61"
+        y2="8.91"
+    ></line>`,
+        },
     };
 
     let selectedIcon = icons[name];
