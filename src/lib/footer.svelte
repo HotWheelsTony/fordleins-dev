@@ -2,7 +2,7 @@
     import Icon from "./icon.svelte";
 </script>
 
-<footer class="sm:w-3/5 mt-24 lg:mt-0">
+<footer class="lg:w-3/5 mt-24 lg:mt-0">
     <span>
         Built with
         <a href="https://kit.svelte.dev/">SvelteKit,</a>
