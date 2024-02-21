@@ -102,13 +102,13 @@
     ></line>`,
         },
     };
-
+    export let size = 6;
     let selectedIcon = icons[name];
 </script>
 
 <svg
     fill="none"
-    class="h-6 w-6"
+    class="h-{size} w-{size}"
     viewBox="0 0 {selectedIcon.box} {selectedIcon.box}"
     xmlns="http://www.w3.org/2000/svg"
 >
