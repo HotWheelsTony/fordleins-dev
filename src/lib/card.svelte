@@ -1,19 +1,13 @@
 <script>
     export let content = {
         title: "Title",
-        org: "Org",
-        date: "Jan 2000 - Dec 2001",
-        skills: ["React", "Angular"],
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum.`,
+        org: "Organisation",
+        date: "From Date - To Date",
+        skills: ["Skills"],
+        description: "Description",
         url: "/",
     };
-    let pointerStyle = content.url === "/" ? "cursor-default" : "";
+    $: pointerStyle = content.url === "/" ? "cursor-default" : "";
 </script>
 
 <a href={content.url} target="”_blank”" class="no-underline {pointerStyle}">
@@ -22,18 +16,19 @@
      lg:hover:bg-mediumGrey/40
       lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
     >
-        <div class="lg:flex-shrink-0 lg:w-1/4">
+        <div class="sm:flex-shrink-0 sm:w-1/4">
             <span>
                 {content.date}
             </span>
         </div>
         <div>
-            <h2 class="text-lg">
-                <span class="text-green">
+            <h2 class="text-lg tracking-normal">
+                <span class="text-green font-semibold">
                     {content.title}
                 </span>
                 &bull; {content.org}
             </h2>
+
             <p class="py-2">
                 {content.description}
             </p>
