@@ -45,7 +45,7 @@ svg {
 }
 
 a {
-    @apply underline hover:text-green transition;
+    @apply underline hover:text-cyan transition;
 }
 
 
