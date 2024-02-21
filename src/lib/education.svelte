@@ -20,7 +20,9 @@
             description: `Studied my bachelor's degree majoring in computer science 
                 with a specialization in cyber security, my studies mainly focused on
                 object-oriented development with an emphasis on algorithm analysis and 
-                design, cyber security, mobile development, and software design patterns.`,
+                design, cyber security, mobile development, and software design patterns. 
+                Some personal achievements include being awarded the Great Futures Alumni Appeal scholarship,
+                and graduating with a GPA of 7.2.`,
             url: "https://www.wgtn.ac.nz/",
         },
         {
