@@ -5,7 +5,7 @@
         {
             title: "fordleins.dev",
             org: "Personal",
-            date: "Feb 2024 - Present",
+            date: "Feb 2024",
             skills: ["SvelteKit", "TailwindCSS", "Firebase"],
             description: `A good excuse to dip my toes into SvelteKit, 
                 this site is designed to act as a kind of 'living resume'. 
@@ -14,7 +14,7 @@
         {
             title: "trailerco.nz",
             org: "TrailerCo Ltd.",
-            date: "Jan 2024 - Present",
+            date: "Jan 2024",
             skills: ["Angular", "TypeScript", "TailwindCSS", "Firebase"],
             description: `Helped a new trailer building business establish their 
                 online presence with a simple website showcasing their work.`,
@@ -23,7 +23,7 @@
         {
             title: "argentdigital.co.nz",
             org: "Argent Digital Ltd.",
-            date: "Dec 2023 - Present",
+            date: "Dec 2023",
             skills: [
                 "Angular",
                 "TypeScript",
@@ -38,7 +38,7 @@
         {
             title: "essentialtherapyaotearoa.co.nz",
             org: "Essential Therapy Aotearoa",
-            date: "Sep 2023 - Present",
+            date: "Sep 2023",
             skills: [
                 "Angular",
                 "Ionic",
@@ -60,6 +60,9 @@
 </script>
 
 <div class="group/cards">
+    <h2 class="lg:hidden sticky top-0 w-full py-4 text-2xl backdrop-blur-sm">
+        Projects
+    </h2>
     {#each projects as project}
         <Card content={project} />
     {/each}

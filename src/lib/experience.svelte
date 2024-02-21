@@ -27,7 +27,6 @@
             skills: [
                 "Java",
                 "Tutoring",
-                "Communication",
                 "IntelliJ",
                 "Algorithms",
                 "Data Structures",
@@ -43,6 +42,9 @@
 </script>
 
 <div class="group/cards">
+    <h2 class="lg:hidden sticky top-0 w-full py-4 text-2xl backdrop-blur-sm">
+        Experience
+    </h2>
     {#each roles as role}
         <Card content={role} />
     {/each}
