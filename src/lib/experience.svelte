@@ -7,6 +7,7 @@
             title: "Software Developer",
             org: "SpatialNetworx",
             date: "Nov 2023 - Present ",
+            location: "Melbourne, AU",
             skills: ["C#", "Python", "PostGreSQL", "Angular"],
             description: `Software developer across multiple projects`,
             url: "https://spatialnetworx.ai/",
@@ -15,6 +16,7 @@
             title: "Junior Full Stack Developer",
             org: "Capgemini",
             date: "Feb 2022 - Aug 2023",
+            location: "Wellington, NZ",
             skills: ["Angular", "TypeScript", "SQL", "C#", "Docker"],
             description: `Worked as part of Capgemini\’s Cloud & Custom Apps team 
                 as a junior full stack developer. I contributed to diverse range 
@@ -25,6 +27,7 @@
             title: "Software Engineering Tutor",
             org: "Victoria University of Wellington",
             date: "Mar 2021 - Nov 2021",
+            location: "Wellington, NZ",
             skills: [
                 "Java",
                 "Tutoring",

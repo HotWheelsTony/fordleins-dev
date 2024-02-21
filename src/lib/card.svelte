@@ -2,6 +2,7 @@
     export let content = {
         title: "Title",
         org: "Organisation",
+        location: "Location",
         date: "From Date - To Date",
         skills: ["Skills"],
         description: "Description",
@@ -16,10 +17,15 @@
      lg:hover:bg-mediumGrey/40
       lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
     >
-        <div class="sm:flex-shrink-0 sm:w-1/4">
+        <div class="sm:flex flex-col flex-shrink-0">
             <span>
                 {content.date}
             </span>
+            {#if content.location}
+                <span class="text-sm">
+                    {content.location}
+                </span>
+            {/if}
         </div>
         <div>
             <h2 class="text-lg tracking-normal">
@@ -35,7 +41,7 @@
             <div class="flex flex-wrap">
                 {#each content.skills as skill}
                     <div
-                        class="mr-2 mt-1 px-2 text-sm text-green bg-green/10 rounded-full"
+                        class="mr-2 mt-2 px-2 text-sm text-green bg-green/10 rounded-full"
                     >
                         {skill}
                     </div>
