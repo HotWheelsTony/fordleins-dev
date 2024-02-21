@@ -22,7 +22,7 @@
      lg:hover:bg-mediumGrey/40
       lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
     >
-        <div class="flex-shrink-0 w-1/4">
+        <div class="lg:flex-shrink-0 lg:w-1/4">
             <span>
                 {content.date}
             </span>
