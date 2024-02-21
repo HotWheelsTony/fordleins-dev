@@ -17,7 +17,7 @@
                 "Data Structures",
                 "Mobile Development",
             ],
-            description: `Studied my bachelor\’s degree majoring in computer science 
+            description: `Studied my bachelor's degree majoring in computer science 
                 with a specialization in cyber security, my studies mainly focused on
                 object-oriented development with an emphasis on algorithm analysis and 
                 design, cyber security, mobile development, and software design patterns.`,
