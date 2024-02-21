@@ -21,8 +21,8 @@
             <span>
                 {content.date}
             </span>
-            <span class="sm:hidden"> &bull; </span>
             {#if content.location}
+                <span class="sm:hidden"> &bull; </span>
                 <span class="sm:text-sm text-opacity-60">
                     {content.location}
                 </span>
