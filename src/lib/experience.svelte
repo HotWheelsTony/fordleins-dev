@@ -18,7 +18,7 @@
             date: "Feb 2022 - Aug 2023",
             location: "Wellington, NZ",
             skills: ["Angular", "TypeScript", "SQL", "C#", "Docker"],
-            description: `Worked as part of Capgemini\’s Cloud & Custom Apps team 
+            description: `Worked as part of Capgemini's Cloud & Custom Apps team 
                 as a junior full stack developer. I contributed to diverse range 
                 of projects for a number of clients.`,
             url: "https://www.capgemini.com/",
