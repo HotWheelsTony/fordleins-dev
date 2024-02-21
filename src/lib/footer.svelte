@@ -3,7 +3,7 @@
 </script>
 
 <footer class="sm:w-3/5 mt-24 lg:mt-0">
-    <span class="text-lg">
+    <span>
         Built with
         <a href="https://kit.svelte.dev/">SvelteKit,</a>
         <a href="https://tailwindcss.com/">Tailwind,</a>
