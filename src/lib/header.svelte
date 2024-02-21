@@ -6,8 +6,8 @@ and full stack development positions. My full stack experience was gained while
 working for Capgemini NZ, during my time there I worked on a number of projects.`;
 </script>
 
-<header class="mb-6">
-    <div class="mb-6 lg:mb-10">
+<header>
+    <div class="mb-6">
         <h1 class="text-5xl mb-3">Ford Leins</h1>
         <span class="text-xl">
             Software Developer at <a href="https://spatialnetworx.ai/"
@@ -15,7 +15,7 @@ working for Capgemini NZ, during my time there I worked on a number of projects.
             >
         </span>
     </div>
-    <div class="flex gap-2 mb-6 lg:mb-10">
+    <div class="flex gap-2 mb-6">
         <a href="https://www.linkedin.com/in/ford-leins/">
             <Icon name="linkedin" />
         </a>
@@ -26,7 +26,8 @@ working for Capgemini NZ, during my time there I worked on a number of projects.
             <Icon name="email" />
         </a>
     </div>
-    <div class="md:w-3/5 mb-6">
+    <div class="md:w-4/5">
+        <h2 class="py-4 text-2xl">About</h2>
         <span class="text-lg">
             {about}
         </span>
