@@ -63,17 +63,17 @@
                 class="content flex flex-col flex-[0] overflow-x-clip overflow-y-auto"
             >
                 <header
-                    class="z-10 p-4 flex justify-between sticky top-0 backdrop-blur-sm"
+                    class="z-10 p-4 text-2xl flex justify-between sticky top-0 backdrop-blur-sm"
                 >
-                    <h2 class="text-2xl">{section.name}</h2>
+                    <h2>{section.name}</h2>
                     <button
                         on:click={() => {
                             closeSection();
                         }}
                     >
-                        <span class="text-2xl font-semibold hover:text-red">
+                        <h2 class="font-semibold text-lightGrey hover:text-red">
                             Close
-                        </span>
+                        </h2>
                     </button>
                 </header>
                 <svelte:component this={section.content} />
