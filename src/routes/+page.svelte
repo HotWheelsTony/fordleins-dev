@@ -16,7 +16,7 @@
 
     const updateMousePos = (event) => {
         document
-            .getElementById("background")
+            .getElementById("lg-bg")
             .style.setProperty(
                 "background",
                 `radial-gradient(600px at ${event.clientX}px ${event.clientY}px, rgba(49, 49, 49, 0.5), transparent 50%)`,
@@ -24,12 +24,20 @@
     };
 </script>
 
-<div id="background" class="fixed inset-0 -z-10" />
+<div id="lg-bg" class="hidden lg:block fixed inset-0 -z-10" />
+<div id="sm-bg" class="glow lg:hidden fixed inset-0 -z-10" />
 
-<div class="mx-auto h-screen max-w-screen-xl px-6 lg:py-0 lg:px-20">
+<div
+    class="mx-auto min-h-screen lg:h-screen max-w-screen-xl px-10 py-20 lg:py-0 lg:px-16"
+>
     <div class="lg:flex lg:justify-between lg:gap-4 h-full">
         <div class="lg:sticky lg:top-0 lg:py-20 flex flex-col justify-between">
             <Header />
+            <div class="lg:hidden">
+                <Experience />
+                <Projects />
+                <Skills />
+            </div>
             <Footer />
         </div>
         <FlexStack
@@ -52,9 +60,9 @@
 </div>
 
 <style>
-    #background {
+    .glow {
         background: radial-gradient(
-            1000px at 0px 0px,
+            900px at 0px 0px,
             rgba(49, 49, 49, 1),
             transparent 50%
         );
