@@ -11,6 +11,7 @@
             description: `A good excuse to dip my toes into SvelteKit, 
                 this site is designed to act as a kind of 'living resume'. 
                 A place to showcase my experience and personal projects.`,
+            url: "https://github.com/HotWheelsTony/fordleins-dev",
         },
         {
             title: "trailerco.nz",
