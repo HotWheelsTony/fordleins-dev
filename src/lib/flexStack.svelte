@@ -1,5 +1,5 @@
 <script>
-    import Card from "./card.svelte";
+    import { SvelteComponent } from "svelte";
 
     const openSection = (sectionId) => {
         document.querySelectorAll(".section").forEach((section) => {
@@ -26,15 +26,7 @@
     export let sections = [
         {
             name: "Section A",
-            content: Card,
-        },
-        {
-            name: "Section B",
-            content: Card,
-        },
-        {
-            name: "Section C",
-            content: Card,
+            content: SvelteComponent,
         },
     ];
 </script>
