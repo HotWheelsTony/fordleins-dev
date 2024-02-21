@@ -17,13 +17,13 @@
      lg:hover:bg-mediumGrey/40
       lg:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15)]"
     >
-        <div class="sm:flex flex-col flex-shrink-0 sm:w-1/5">
+        <div class="sm:flex flex-col flex-shrink-0 sm:m-w-fit sm:w-1/4">
             <span>
                 {content.date}
             </span>
             <span class="sm:hidden"> &bull; </span>
             {#if content.location}
-                <span class="sm:text-sm text-lightGrey/60">
+                <span class="sm:text-sm text-opacity-60">
                     {content.location}
                 </span>
             {/if}
