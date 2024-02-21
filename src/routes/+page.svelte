@@ -5,7 +5,7 @@
     import FlexStack from "$lib/flexStack.svelte";
     import Experience from "$lib/experience.svelte";
     import Projects from "$lib/projects.svelte";
-    import Skills from "$lib/skills.svelte";
+    import Education from "$lib/education.svelte";
 
     onMount(() => {
         window.addEventListener("mousemove", updateMousePos);
@@ -36,7 +36,7 @@
             <div class="lg:hidden">
                 <Experience />
                 <Projects />
-                <Skills />
+                <Education />
             </div>
             <Footer />
         </div>
@@ -51,8 +51,8 @@
                     content: Projects,
                 },
                 {
-                    name: "Education & Skills",
-                    content: Skills,
+                    name: "Education",
+                    content: Education,
                 },
             ]}
         />
