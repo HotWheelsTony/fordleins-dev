@@ -1,5 +1,6 @@
 <script>
     import Card from "./card.svelte";
+    import StickyHeader from "./stickyHeader.svelte";
 
     const roles = [
         {
@@ -42,9 +43,7 @@
 </script>
 
 <div class="group/cards">
-    <h2 class="lg:hidden sticky top-0 w-full py-4 text-2xl backdrop-blur-sm">
-        Experience
-    </h2>
+    <StickyHeader title="Experience" />
     {#each roles as role}
         <Card content={role} />
     {/each}

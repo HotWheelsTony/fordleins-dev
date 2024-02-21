@@ -1,5 +1,6 @@
 <script>
     import Card from "./card.svelte";
+    import StickyHeader from "./stickyHeader.svelte";
 
     const projects = [
         {
@@ -60,9 +61,7 @@
 </script>
 
 <div class="group/cards">
-    <h2 class="lg:hidden sticky top-0 w-full py-4 text-2xl backdrop-blur-sm">
-        Projects
-    </h2>
+    <StickyHeader title="Projects" />
     {#each projects as project}
         <Card content={project} />
     {/each}
