@@ -34,13 +34,13 @@
                 </span>
                 &bull; {content.org}
             </h2>
-            <p>
+            <p class="py-2">
                 {content.description}
             </p>
             <div class="flex flex-wrap">
                 {#each content.skills as skill}
                     <div
-                        class="mr-2 mt-2 px-2 text-sm text-green bg-green/10 rounded-full"
+                        class="mr-2 mt-1 px-2 text-sm text-green bg-green/10 rounded-full"
                     >
                         {skill}
                     </div>
