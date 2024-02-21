@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Icon from "./icon.svelte";
 
     const about = `Nearly 3 years of professional experience in software engineering, across tutoring

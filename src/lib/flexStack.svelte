@@ -1,18 +1,18 @@
-<script>
+<script lang="ts">
     import { SvelteComponent } from "svelte";
 
-    const openSection = (sectionId) => {
+    const openSection = (sectionId: string) => {
         document.querySelectorAll(".section").forEach((section) => {
             if (section.id !== sectionId) {
                 section.classList.add("flex-[0]", "pointer-events-none");
             }
         });
-        document.getElementById("main").classList.remove("my-20");
-        document.getElementById(sectionId).classList.add("open");
+        document.getElementById("main")?.classList.remove("my-20");
+        document.getElementById(sectionId)?.classList.add("open");
     };
 
     const closeSection = () => {
-        document.getElementById("main").classList.add("my-20");
+        document.getElementById("main")?.classList.add("my-20");
         document.querySelectorAll(".section").forEach((section) => {
             section.classList.remove("flex-[0]", "open");
 
@@ -23,12 +23,10 @@
         });
     };
 
-    export let sections = [
-        {
-            name: "Section A",
-            content: SvelteComponent,
-        },
-    ];
+    export let sections: {
+        name: string;
+        content: any;
+    }[] = [];
 </script>
 
 <main id="main" class="hidden lg:flex flex-col max-h-full my-20 group/sections">

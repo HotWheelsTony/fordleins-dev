@@ -1,5 +1,15 @@
-<script>
-    export let content = {
+<script lang="ts">
+    interface ICardContent {
+        title: string;
+        org: string;
+        location?: string;
+        date: string;
+        skills: string[];
+        description: string;
+        url: string;
+    }
+
+    export let content: ICardContent = {
         title: "Title",
         org: "Organisation",
         location: "Location",

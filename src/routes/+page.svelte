@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount } from "svelte";
     import Header from "$lib/header.svelte";
     import Footer from "$lib/footer.svelte";
@@ -14,10 +14,10 @@
         };
     });
 
-    const updateMousePos = (event) => {
+    const updateMousePos = (event: MouseEvent) => {
         document
             .getElementById("lg-bg")
-            .style.setProperty(
+            ?.style.setProperty(
                 "background",
                 `radial-gradient(600px at ${event.clientX}px ${event.clientY}px, rgba(49, 49, 49, 0.5), transparent 50%)`,
             );
