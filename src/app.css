@@ -53,52 +53,52 @@ a {
     font-family: "Archivo";
     font-style: normal;
     font-weight: 300;
-    src: url("../fonts/Archivo-Light.woff2") format('woff2'),
-        url("../fonts/Archivo-Light.woff") format('woff'),
-        url("../fonts/Archivo-Light.ttf") format('truetype');
+    src: url("/fonts/Archivo-Light.woff2") format('woff2'),
+        url("/fonts/Archivo-Light.woff") format('woff'),
+        url("/fonts/Archivo-Light.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Archivo";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Archivo-Regular.woff2") format('woff2'),
-        url("../fonts/Archivo-Regular.woff") format('woff'),
-        url("../fonts/Archivo-Regular.ttf") format('truetype');
+    src: url("/fonts/Archivo-Regular.woff2") format('woff2'),
+        url("/fonts/Archivo-Regular.woff") format('woff'),
+        url("/fonts/Archivo-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Archivo";
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/Archivo-Medium.woff2") format('woff2'),
-        url("../fonts/Archivo-Medium.woff") format('woff'),
-        url("../fonts/Archivo-Medium.ttf") format('truetype');
+    src: url("/fonts/Archivo-Medium.woff2") format('woff2'),
+        url("/fonts/Archivo-Medium.woff") format('woff'),
+        url("/fonts/Archivo-Medium.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Archivo";
     font-style: normal;
     font-weight: 600;
-    src: url("../fonts/Archivo-SemiBold.woff2") format('woff2'),
-        url("../fonts/Archivo-SemiBold.woff") format('woff'),
-        url("../fonts/Archivo-SemiBold.ttf") format('truetype');
+    src: url("/fonts/Archivo-SemiBold.woff2") format('woff2'),
+        url("/fonts/Archivo-SemiBold.woff") format('woff'),
+        url("/fonts/Archivo-SemiBold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Archivo";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/Archivo-Bold.woff2") format('woff2'),
-        url("../fonts/Archivo-Bold.woff") format('woff'),
-        url("../fonts/Archivo-Bold.ttf") format('truetype');
+    src: url("/fonts/Archivo-Bold.woff2") format('woff2'),
+        url("/fonts/Archivo-Bold.woff") format('woff'),
+        url("/fonts/Archivo-Bold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Archivo";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/Archivo-Italic.woff2") format('woff2'),
-        url("../fonts/Archivo-Italic.woff") format('woff'),
-        url("../fonts/Archivo-Italic.ttf") format('truetype');
+    src: url("/fonts/Archivo-Italic.woff2") format('woff2'),
+        url("/fonts/Archivo-Italic.woff") format('woff'),
+        url("/fonts/Archivo-Italic.ttf") format('truetype');
 }
