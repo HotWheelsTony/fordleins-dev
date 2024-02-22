@@ -7,10 +7,10 @@
             title: "fordleins.dev",
             org: "Personal",
             date: "Feb 2024",
-            skills: ["SvelteKit", "TailwindCSS", "Firebase"],
+            skills: ["SvelteKit", "TypeScript", "TailwindCSS", "Firebase"],
             description: `A good excuse to dip my toes into SvelteKit, 
                 this site is designed to act as a kind of 'living resume'. 
-                A place to showcase my experience and personal projects.`,
+                A place to showcase my experience and projects.`,
             url: "https://github.com/HotWheelsTony/fordleins-dev",
         },
         {
@@ -34,7 +34,7 @@
                 "Google Cloud",
             ],
             description: `Created a simple portfolio website with contact functionality 
-                for a photography & videography in New Zealand.`,
+                for a photography & videography business in New Zealand.`,
             url: "https://argentdigital.co.nz/",
         },
         {
