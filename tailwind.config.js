@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                customFont: ['"Archivo"', "sans-serif"],
+                customFont: ["Archivo", "sans-serif"],
             },
             colors: {
                 red: '#FA675F',
