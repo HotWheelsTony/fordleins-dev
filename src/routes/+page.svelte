@@ -24,6 +24,10 @@
     };
 </script>
 
+<svelte:head>
+    <title>Ford Leins</title>
+</svelte:head>
+
 <div id="lg-bg" class="hidden lg:block fixed inset-0 -z-10" />
 <div id="sm-bg" class="glow lg:hidden fixed inset-0 -z-10" />
 
