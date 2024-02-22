@@ -52,10 +52,10 @@
                 "Google Calendar",
             ],
             description: `Designed and built a bespoke booking platform and product 
-                catalogue for a small massage & aromatherapy business. The aim was 
+                catalogue for a massage & aromatherapy business. The aim was 
                 to allow users to easily make appointments via a streamlined process, 
                 and enable the client to manage these bookings easily by integrating 
-                directly with their personal Google calendar.`,
+                directly with Google calendar.`,
             url: "https://essentialtherapyaotearoa.co.nz/home",
         },
     ];
