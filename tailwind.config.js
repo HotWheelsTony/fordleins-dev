@@ -14,7 +14,7 @@ export default {
                 cyan: '#20E7F3',
                 blue: '#197CD8',
                 veryLightGrey: '#DEDEDE',
-                lightGrey: '#8A8A8A',
+                lightGrey: '#A1A1A1',
                 lightMediumGrey: '#444444',
                 mediumGrey: '#313131',
                 darkGrey: '#272727',
