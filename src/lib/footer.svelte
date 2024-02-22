@@ -3,14 +3,14 @@
 </script>
 
 <footer class="lg:w-3/5 mt-24 lg:mt-0">
-    <span>
+    <p>
         Built with
         <a href="https://kit.svelte.dev/">SvelteKit,</a>
         <a href="https://tailwindcss.com/">Tailwind,</a>
         <a href="https://firebase.google.com/">Firebase,</a>
         and
         <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
-    </span>
+    </p>
     <div class="flex mt-2 gap-2">
         <a class="icon" href="https://kit.svelte.dev/">
             <Icon name="svelte" />
