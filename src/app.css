@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: "Archivo";
-    @apply bg-darkGrey antialiased leading-relaxed text-slate-400 selection:bg-green;
+    @apply bg-darkGrey antialiased leading-relaxed text-slate-400 selection:bg-cyan selection:text-black;
 }
 
 h1,
