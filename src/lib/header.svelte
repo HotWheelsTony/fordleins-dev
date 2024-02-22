@@ -1,9 +1,8 @@
 <script lang="ts">
     import Icon from "./icon.svelte";
 
-    const about = `Nearly 3 years of professional experience in software engineering, across tutoring
-and full stack development positions. My full stack experience was gained while
-working for Capgemini NZ, during my time there I worked on a number of projects.`;
+    const about = `Full-stack developer with two years of industry experience across New Zealand and Australia,
+skilled in object-oriented programming with a keen interest in web development outside of work.`;
 </script>
 
 <header>

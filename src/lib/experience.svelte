@@ -8,8 +8,8 @@
             org: "SpatialNetworx",
             date: "Nov 2023 - Present ",
             location: "Melbourne, AU",
-            skills: ["C#", "Python", "PostGreSQL", "Angular"],
-            description: `Software developer across multiple projects`,
+            skills: ["C#", "Python", "PostgreSQL", "Angular"],
+            description: `Develop and maintain geospatial analysis tools used for planning, designing, and optimizing telecommunications networks.`,
             url: "https://spatialnetworx.ai/",
         },
         {
@@ -17,10 +17,19 @@
             org: "Capgemini",
             date: "Feb 2022 - Aug 2023",
             location: "Wellington, NZ",
-            skills: ["Angular", "TypeScript", "SQL", "C#", "Docker"],
+            skills: [
+                "Angular",
+                "React",
+                "TypeScript",
+                "JavaScript",
+                "SQL",
+                "C#",
+                "Docker",
+            ],
             description: `Worked as part of Capgemini's Cloud & Custom Apps team 
-                as a junior full stack developer. I contributed to diverse range 
-                of projects for a number of clients.`,
+                as a junior full-stack developer. I contributed to diverse range 
+                of projects for a number of clients, some of which included Microsoft, 
+                Lindsay Corporation, and Deparntment of Internal Affairs NZ. `,
             url: "https://www.capgemini.com/",
         },
         {
@@ -34,6 +43,7 @@
                 "IntelliJ",
                 "Algorithms",
                 "Data Structures",
+                "Software Design Patterns",
             ],
             description: `Worked part time for two semesters as a software engineering 
                 tutor. Delivering in person labs to second year software engineering 
