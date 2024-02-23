@@ -5,7 +5,7 @@
 skilled in object-oriented programming with a keen interest in web development outside of work.`;
 </script>
 
-<header>
+<header class="mb-12 lg:mb-0">
     <div class="mb-6">
         <h1 class="text-5xl mb-3">Ford Leins</h1>
         <span class="text-xl">
