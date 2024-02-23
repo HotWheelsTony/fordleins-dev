@@ -32,7 +32,7 @@
 <div id="sm-bg" class="glow lg:hidden fixed inset-0 -z-10" />
 
 <div
-    class="mx-auto min-h-screen lg:h-screen max-w-screen-xl px-10 py-20 lg:py-0 lg:px-16"
+    class="mx-auto min-h-screen lg:h-screen max-w-screen-xl px-6 py-12 lg:py-0 lg:px-16"
 >
     <div class="lg:flex lg:justify-between lg:gap-4 h-full">
         <div class="lg:sticky lg:top-0 lg:py-20 flex flex-col justify-between">
