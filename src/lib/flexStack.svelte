@@ -1,18 +1,14 @@
 <script lang="ts">
-    import { SvelteComponent } from "svelte";
-
     const openSection = (sectionId: string) => {
         document.querySelectorAll(".section").forEach((section) => {
             if (section.id !== sectionId) {
                 section.classList.add("flex-[0]", "pointer-events-none");
             }
         });
-        document.getElementById("main")?.classList.remove("my-20");
         document.getElementById(sectionId)?.classList.add("open");
     };
 
     const closeSection = () => {
-        document.getElementById("main")?.classList.add("my-20");
         document.querySelectorAll(".section").forEach((section) => {
             section.classList.remove("flex-[0]", "open");
 
@@ -50,7 +46,7 @@
                 class="content pb-12 flex flex-col flex-[0] overflow-x-clip overflow-y-auto"
             >
                 <header
-                    class="z-10 p-4 text-2xl flex justify-between sticky top-0 backdrop-blur-sm"
+                    class="z-10 p-4 pt-0 text-2xl flex justify-between sticky top-0 backdrop-blur-sm"
                 >
                     <h2>{section.name}</h2>
                     <button
