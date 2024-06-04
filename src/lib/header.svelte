@@ -1,8 +1,19 @@
 <script lang="ts">
     import Icon from "./icon.svelte";
+    import { DateTime } from "luxon";
 
-    const about = `Full-stack developer with two years of industry experience across New Zealand and Australia,
-skilled in object-oriented programming with a keen interest in web development outside of work.`;
+    const yearsElapsed = (
+        since: DateTime,
+        until: DateTime = DateTime.now(),
+    ): number => {
+        const years = Math.round(until.diff(since).as("years") * 2) / 2;
+
+        return years;
+    };
+
+    const about = `Full-stack developer with ${yearsElapsed(DateTime.fromObject({ year: 2022, month: 2 }))} 
+    years of industry experience across Australia and New Zealand. Skilled in object-oriented programming and web development, 
+    with interests in algorithms, creative programming, and web design.`;
 </script>
 
 <header class="mb-12 lg:mb-0">
