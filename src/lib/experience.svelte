@@ -8,7 +8,7 @@
             org: "SpatialNetworx",
             date: "Nov 2023 - Present ",
             location: "Melbourne, AU",
-            skills: ["C#", "Python", "PostgreSQL", "Angular"],
+            skills: ["C#", "Python", "SQL", "Angular"],
             description: `Develop and maintain geospatial analysis tools used for planning, designing, and optimizing telecommunications networks.`,
             url: "https://spatialnetworx.ai/",
         },
