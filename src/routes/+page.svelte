@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-    <title>Ford Leins</title>
+    <title>Ford Leins - Full-Stack Software Developer</title>
 </svelte:head>
 
 <div id="lg-bg" class="hidden lg:block fixed inset-0 -z-10" />
