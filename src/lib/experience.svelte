@@ -13,7 +13,7 @@
             url: "https://spatialnetworx.ai/",
         },
         {
-            title: "Junior Full Stack Developer",
+            title: "Junior Software Developer",
             org: "Capgemini",
             date: "Feb 2022 - Aug 2023",
             location: "Wellington, NZ",
