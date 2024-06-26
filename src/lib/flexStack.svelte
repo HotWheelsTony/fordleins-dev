@@ -29,13 +29,13 @@
     {#each sections as section}
         <section
             id={section.name}
-            class="section flex flex-1 hover:!flex-[3] overflow-clip"
+            class="section flex flex-1 hover:!flex-[3] overflow-clip min-h-0"
         >
             <button
                 on:click={() => {
                     openSection(section.name);
                 }}
-                class="title flex-1 bg-mediumGrey group-hover/sections:opacity-30 hover:!bg-lightMediumGrey/70 hover:!opacity-100 overflow-clip"
+                class="title flex-1 bg-mediumGrey group-hover/sections:opacity-30 hover:!bg-lightMediumGrey/70 hover:!opacity-100 overflow-clip min-w-0"
             >
                 <h3 class="text-4xl">
                     {section.name}
