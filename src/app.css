@@ -48,6 +48,23 @@ a {
     @apply underline hover:text-cyan transition;
 }
 
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        @apply w-2;
+        @apply h-2;
+    }
+  
+    .scrollbar::-webkit-scrollbar-track {
+        @apply rounded-full;
+        @apply bg-mediumGrey;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-lightMediumGrey;
+        @apply rounded-full;
+    }
+  }
+
 
 @font-face {
     font-family: "Archivo";

@@ -43,7 +43,7 @@
             </button>
 
             <div
-                class="content pb-12 flex flex-col flex-[0] overflow-x-clip overflow-y-auto"
+                class="content pb-12 flex flex-col flex-[0] overflow-x-clip overflow-y-auto scrollbar"
             >
                 <header
                     class="z-10 p-4 pt-0 text-2xl flex justify-between sticky top-0 backdrop-blur-sm"
