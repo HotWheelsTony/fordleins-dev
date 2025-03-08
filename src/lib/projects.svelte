@@ -1,8 +1,9 @@
 <script lang="ts">
     import Card from "./card.svelte";
     import StickyHeader from "./stickyHeader.svelte";
+    import type { ICardContent } from "./types";
 
-    const projects = [
+    const projects: ICardContent[] = [
         {
             title: "essentialtherapyaotearoa.co.nz",
             org: "Essential Therapy Aotearoa",

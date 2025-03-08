@@ -1,15 +1,6 @@
 <script lang="ts">
     import Icon from "./icon.svelte";
-
-    interface ICardContent {
-        title: string;
-        org: string;
-        location?: string;
-        date: string;
-        skills: string[];
-        description: string;
-        url: string;
-    }
+    import type { ICardContent } from "./types";
 
     export let content: ICardContent = {
         title: "Title",

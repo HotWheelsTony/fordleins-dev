@@ -1,8 +1,9 @@
 <script lang="ts">
     import Card from "./card.svelte";
     import StickyHeader from "./stickyHeader.svelte";
+    import type { ICardContent } from "./types";
 
-    const schoolxp = [
+    const schoolxp: ICardContent[] = [
         {
             title: "Bachelor of Science Maj. Computer Science",
             org: "Victoria University of Wellington",
