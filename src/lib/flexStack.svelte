@@ -54,7 +54,9 @@
                             closeSection();
                         }}
                     >
-                        <h2 class="font-semibold text-lightGrey hover:text-red">
+                        <h2
+                            class="font-semibold text-lightGrey hover:text-red transition-all ease-in-out"
+                        >
                             Close
                         </h2>
                     </button>
