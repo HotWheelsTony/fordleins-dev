@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Icon from "./icon.svelte";
+
     interface ICardContent {
         title: string;
         org: string;
@@ -39,11 +41,17 @@
             {/if}
         </div>
         <div>
-            <h2 class="text-lg tracking-normal">
+            <h2 class="text-lg">
                 <span class="text-green font-semibold">
                     {content.title}
                 </span>
-                &bull; {content.org}
+                <span class="text-veryLightGrey"> &bull; </span>
+                <span class="inline-flex text-veryLightGrey font-semibold">
+                    {content.org}
+                    <span class="pl-2">
+                        <Icon name="link" />
+                    </span>
+                </span>
             </h2>
 
             <p class="py-2">
