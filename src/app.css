@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-    @apply text-lightGrey leading-normal;
+    @apply text-lightGrey leading-relaxed;
 }
 
 span {
