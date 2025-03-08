@@ -1,5 +1,8 @@
 <script lang="ts">
     import Icon from "./icon.svelte";
+    import { DateTime } from "luxon";
+
+    const currentYear = DateTime.now().year;
 </script>
 
 <footer class="lg:w-3/5 mt-24 lg:mt-0">
@@ -24,5 +27,8 @@
         <a class="icon" href="https://code.visualstudio.com/">
             <Icon name="vscode" />
         </a>
+    </div>
+    <div class="mt-4">
+        <span>&copy; Ford Leins {currentYear}</span>
     </div>
 </footer>
